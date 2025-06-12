@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#dice{
+    display: block;
+    color : black;
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#b, #reset {
+    position: relative;
+    overflow: visible;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+#b {
+    background: linear-gradient(to right, #36D1DC, #5B86E5);
+}
+
+#reset {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+#b::after {
+    content: "";
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-image: url('COLOURBOX25720073-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: bottom 0.4s ease;
+    z-index: -1;
+}
+
+#b:hover::after{
+    bottom: -0.5vh;
+}
+
+#di{
+    display: block;
+    text-align: center;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('istockphoto-1075477932-612x612.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10vw;
+    color: antiquewhite;
+}
